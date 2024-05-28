@@ -411,18 +411,7 @@
     height: 4.0rem;
     font-size: 2.0rem;
   }
-  /*차량상세*/
-  .update{
-    left: 130rem;
-    position: absolute;
-    top: 17rem;
-  }
-  /*차량서류*/
-  .document{
-    left: 120rem;
-    position: absolute;
-    top: 17rem;
-  }
+
   .closeComplete {
     position: absolute;
     left: 109rem;
@@ -442,13 +431,61 @@
     width: 11.6rem;
   }
   .documentPopupArticleDouble {
+    margin-left: 4.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: 2.8rem;
 }
+.documentPopupSection{
+  margin-top: 2.8rem;
+}
+.documentPopupArticleBox{
+  flex-direction: column;
+  gap: 2.6rem;
+}
 .documentPopupArticleInput{
-  justify-content: center;
+  border: 1px solid black;
+  width: 31.9rem;
+}
+.fileUploadWrapper {
+  font-weight: 500;
+  font-size: 1.6rem;
+  height: 3.1rem;
+  border: 1.5px solid #575757;
+  display: flex;
   align-items: center;
+  width: 31.9rem;
+  border-radius: 0.5rem;
+}
+
+.fileUploadInput {
+  display: none;
+}
+
+.fileUploadLabel {
+  font-weight: bold;
+  flex: 1;
+  padding-left: 1rem;
+  color: #0000EE;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.fileUploadButton {
+  background-color: #575757;
+    color: white;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 100%;
+    width: 10.9rem;
+}
+
+.fileUploadButton:hover {
+  background-color: #404040;
 }

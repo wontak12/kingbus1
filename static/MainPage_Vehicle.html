@@ -372,10 +372,54 @@
           <hr>
         </div>
         <div class="documentPopupSection">
-          <div class="popupArticleBox">
+          <div class="popupArticleBox documentPopupArticleBox">
             <div class="documentPopupArticleDouble">
               <label for="vehiclePrice" class="popupArticleLabel">차량등록증</label>
-              <input type="file" class="popupArticleInput documentPopupArticleInput">
+              <div class="fileUploadWrapper">
+                <label for="vehicleRegistration" class="fileUploadLabel" id="fileUploadLabel">파일이름.jpg</label>
+                <input type="file" id="vehicleRegistration" class="fileUploadInput" onchange="updateFileName(this)">
+                <div class="fileUploadButton" onclick="document.getElementById('vehicleRegistration').click()">파일선택</div>
+              </div>
+            </div>
+            <div class="documentPopupArticleDouble">
+              <label for="vehiclePrice" class="popupArticleLabel">차량보험</label>
+              <div class="fileUploadWrapper">
+                <label for="vehicleRegistration" class="fileUploadLabel" id="fileUploadLabel">파일이름.jpg</label>
+                <input type="file" id="vehicleRegistration" class="fileUploadInput" onchange="updateFileName(this)">
+                <div class="fileUploadButton" onclick="document.getElementById('vehicleRegistration').click()">파일선택</div>
+              </div>
+            </div>
+            <div class="documentPopupArticleDouble">
+              <label for="vehiclePrice" class="popupArticleLabel">차량점검서류</label>
+              <div class="fileUploadWrapper">
+                <label for="vehicleRegistration" class="fileUploadLabel" id="fileUploadLabel">파일이름.jpg</label>
+                <input type="file" id="vehicleRegistration" class="fileUploadInput" onchange="updateFileName(this)">
+                <div class="fileUploadButton" onclick="document.getElementById('vehicleRegistration').click()">파일선택</div>
+              </div>
+            </div>
+            <div class="documentPopupArticleDouble">
+              <label for="vehiclePrice" class="popupArticleLabel">정비서류</label>
+              <div class="fileUploadWrapper">
+                <label for="vehicleRegistration" class="fileUploadLabel" id="fileUploadLabel">파일이름.jpg</label>
+                <input type="file" id="vehicleRegistration" class="fileUploadInput" onchange="updateFileName(this)">
+                <div class="fileUploadButton" onclick="document.getElementById('vehicleRegistration').click()">파일선택</div>
+              </div>
+            </div>
+            <div class="documentPopupArticleDouble">
+              <label for="vehiclePrice" class="popupArticleLabel">차량명세서</label>
+              <div class="fileUploadWrapper">
+                <label for="vehicleRegistration" class="fileUploadLabel" id="fileUploadLabel">파일이름.jpg</label>
+                <input type="file" id="vehicleRegistration" class="fileUploadInput" onchange="updateFileName(this)">
+                <div class="fileUploadButton" onclick="document.getElementById('vehicleRegistration').click()">파일선택</div>
+              </div>
+            </div>
+            <div class="documentPopupArticleDouble">
+              <label for="vehiclePrice" class="popupArticleLabel">차량등록증</label>
+              <div class="fileUploadWrapper">
+                <label for="vehicleRegistration" class="fileUploadLabel" id="fileUploadLabel">파일이름.jpg</label>
+                <input type="file" id="vehicleRegistration" class="fileUploadInput" onchange="updateFileName(this)">
+                <div class="fileUploadButton" onclick="document.getElementById('vehicleRegistration').click()">파일선택</div>
+              </div>
             </div>
             
           </div>
@@ -384,7 +428,7 @@
         </div>
         <div class="closeComplete">
           <button class="close" onclick="closeDocumentPopup()">닫기</button>
-          <button class="documentComplete">수정</button>
+          <button class="documentComplete">완료</button>
         </div>
     </div>
     
@@ -712,8 +756,8 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
-                  <td></td>
+                  <td onclick="openUpdatePopup()"></td>
+                  <td onclick="openDocumentPopup()"></td>
                 </tr>
               </tbody>
             </table>
@@ -723,18 +767,14 @@
           <button class="delete">삭제</button>
           <button class="create vehicleCreate" onclick="openCreatePopup()">차량 등록</button>
         </div>
-        <div class="update">
-          <button onclick="openUpdatePopup()">차량상세</button>
-        </div>
-        <div class="document">
-          <button onclick="openDocumentPopup()">차량서류</button>
-        </div>
+        
       </div>
     </div>
-  </diㄴv>
+  </div>
   <script src="/kingbus1/static/js/popup.js"></script>
   <script src="/kingbus1/static/js/global.js"></script>
   <script src="/kingbus1/static/js/sidebar.js"></script>
-  <script src="/kingbus1/static/js/documentInput"></script>
+  <script src="/kingbus1/static/js/documentInput.js"></script>
+
 </body>
 </html>
