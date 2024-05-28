@@ -441,3 +441,14 @@
     height: 4.2rem;
     width: 11.6rem;
   }
+  .documentPopupArticleDouble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2.8rem;
+}
+.documentPopupArticleInput{
+  justify-content: center;
+  align-items: center;
+}
