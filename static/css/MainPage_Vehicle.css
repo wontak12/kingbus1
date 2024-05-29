@@ -219,7 +219,11 @@
     border: 0.1rem solid #575757;
     border-radius: 0.5rem;
   }
-  
+  .popupArticleInputSelect{
+    width: 21.5rem;
+    padding-left: 0.5rem
+    ;
+  }
   .popupArticleBoxTwo, .popupArticleBoxOne {
     display: flex;
     justify-content: flex-start;

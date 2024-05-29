@@ -43,7 +43,14 @@
           <div class="popupArticleBox">
             <div class="popupArticleDouble">
               <label for="passengerNum" class="popupArticleLabel">승차인원</label>
-              <input type="text" id="passengerNum" class="popupArticleInput" placeholder="00">
+              <select type="text" id="passengerNum" class="popupArticleInput popupArticleInputSelect" placeholder="00">
+                <option value="17">17</option>
+                <option value="25">25</option>
+                <option value="29">29</option>
+                <option value="33">33</option>
+                <option value="43">43</option>
+                <option value="47">47</option>
+              </select>
             </div>
             <div class="popupArticleDouble">
               <label for="platePrice" class="popupArticleLabel">번호판가격</label>
@@ -59,8 +66,8 @@
           </div>
           <div class="popupArticleBox">
             <div class="popupArticleDouble">
-              <label for="releaseDate" class="popupArticleLabel">출고일자(연도)</label>
-              <input type="text" id="releaseDate" class="popupArticleInput" placeholder="00">
+              <label for="releaseDate" class="popupArticleLabel">출고일자</label>
+              <input type="date" id="releaseDate" class="popupArticleInput" placeholder="00">
             </div>
             <div class="popupArticleDouble">
               <label for="insuranceCost" class="popupArticleLabel">보험비</label>
@@ -77,7 +84,14 @@
           <div class="popupArticleBox">
             <div class="popupArticleDouble">
               <label for="vehicleName" class="popupArticleLabel">차량이름</label>
-              <input type="text" id="vehicleName" class="popupArticleInput" placeholder="00">
+              <select id="vehicleName" class="popupArticleInput popupArticleInputSelect">
+                <option value="">뉴카운티</option>
+                <option value="">뉴그랜버드</option>
+                <option value="">유니버스</option>
+                <option value="">유니버스-노블</option>
+                <option value="">유니버스-프라임</option>
+                <option value="">유니버스-실크로드</option>
+              </select>
             </div>
             <div class="popupArticleDouble">
               <label for="maintenanceCost" class="popupArticleLabel">정비(월)</label>
@@ -94,7 +108,10 @@
           <div class="popupArticleBox">
             <div class="popupArticleDouble">
               <label for="manufacturer" class="popupArticleLabel">제조사</label>
-              <input type="text" id="manufacturer" class="popupArticleInput" placeholder="00">
+              <select id="manufacturer" class="popupArticleInput popupArticleInputSelect">
+                <option value="hyendai">현대</option>
+                <option value="kia">기아</option>
+              </select>
             </div>
             <div class="popupArticleDouble">
               <label for="tuningCost" class="popupArticleLabel">튜닝(일)</label>
@@ -128,7 +145,20 @@
           <div class="popupArticleBox popupArticleBoxTwo">
             <div class="popupArticleDouble">
               <label for="modelYear" class="popupArticleLabel">모델연도</label>
-              <input type="text" id="modelYear" class="popupArticleInput" placeholder="00">
+              <select id="modelYear" class="popupArticleInput popupArticleInputSelect" placeholder="00">
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+              </select>
             </div>
             <div class="popupArticleDouble popupArticleDoubleSecond">
               <label for="depreciationYear" class="popupArticleLabel">감가기준년도</label>
@@ -154,7 +184,11 @@
           <div class="popupArticleBox popupArticleBoxOne">
             <div class="popupArticleDouble">
               <label for="driverName" class="popupArticleLabel">담당기사</label>
-              <input type="text" id="driverName" class="popupArticleInput" placeholder="00">
+              <select type="text" id="driverName" class="popupArticleInput popupArticleInputSelect">
+                <option value="1">김원탁</option>
+                <option value="2">정진욱</option>
+                <option value="3">남소정</option>
+              </select>
             </div>
           </div>
           <div class="popupArticleBox popupArticleBoxOne">
@@ -176,12 +210,7 @@
               </div>
             </div>
           </div>
-          <div class="popupArticleBox popupArticleBoxOne">
-            <div class="popupArticleDouble">
-              <label for="registrationCert" class="popupArticleLabel">차량등록증</label>
-              <input type="text" id="registrationCert" class="popupArticleInput">
-            </div>
-          </div>
+          
         </div>
         <div class="closeCreate">
           <button class="close" onclick="closeCreatePopup()">닫기</button>
@@ -189,6 +218,7 @@
         </div>
       </div>
     </div>
+
     <div id="updatePopup" class="popup">
       <div class="popupContent">
         <div class="popupTitle">
@@ -219,7 +249,14 @@
           <div class="popupArticleBox">
             <div class="popupArticleDouble">
               <label for="passengerNum" class="popupArticleLabel">승차인원</label>
-              <input type="text" id="passengerNum" class="popupArticleInput" placeholder="00">
+              <select type="text" id="passengerNum" class="popupArticleInput popupArticleInputSelect" placeholder="00">
+                <option value="17">17</option>
+                <option value="25">25</option>
+                <option value="29">29</option>
+                <option value="33">33</option>
+                <option value="43">43</option>
+                <option value="47">47</option>
+              </select>
             </div>
             <div class="popupArticleDouble">
               <label for="platePrice" class="popupArticleLabel">번호판가격</label>
@@ -235,8 +272,8 @@
           </div>
           <div class="popupArticleBox">
             <div class="popupArticleDouble">
-              <label for="releaseDate" class="popupArticleLabel">출고일자(연도)</label>
-              <input type="text" id="releaseDate" class="popupArticleInput" placeholder="00">
+              <label for="releaseDate" class="popupArticleLabel">출고일자</label>
+              <input type="date" id="releaseDate" class="popupArticleInput" placeholder="00">
             </div>
             <div class="popupArticleDouble">
               <label for="insuranceCost" class="popupArticleLabel">보험비</label>
@@ -253,7 +290,14 @@
           <div class="popupArticleBox">
             <div class="popupArticleDouble">
               <label for="vehicleName" class="popupArticleLabel">차량이름</label>
-              <input type="text" id="vehicleName" class="popupArticleInput" placeholder="00">
+              <select id="vehicleName" class="popupArticleInput popupArticleInputSelect">
+                <option value="">뉴카운티</option>
+                <option value="">뉴그랜버드</option>
+                <option value="">유니버스</option>
+                <option value="">유니버스-노블</option>
+                <option value="">유니버스-프라임</option>
+                <option value="">유니버스-실크로드</option>
+              </select>
             </div>
             <div class="popupArticleDouble">
               <label for="maintenanceCost" class="popupArticleLabel">정비(월)</label>
@@ -270,7 +314,10 @@
           <div class="popupArticleBox">
             <div class="popupArticleDouble">
               <label for="manufacturer" class="popupArticleLabel">제조사</label>
-              <input type="text" id="manufacturer" class="popupArticleInput" placeholder="00">
+              <select id="manufacturer" class="popupArticleInput popupArticleInputSelect">
+                <option value="hyendai">현대</option>
+                <option value="kia">기아</option>
+              </select>
             </div>
             <div class="popupArticleDouble">
               <label for="tuningCost" class="popupArticleLabel">튜닝(일)</label>
@@ -304,7 +351,20 @@
           <div class="popupArticleBox popupArticleBoxTwo">
             <div class="popupArticleDouble">
               <label for="modelYear" class="popupArticleLabel">모델연도</label>
-              <input type="text" id="modelYear" class="popupArticleInput" placeholder="00">
+              <select id="modelYear" class="popupArticleInput popupArticleInputSelect" placeholder="00">
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+              </select>
             </div>
             <div class="popupArticleDouble popupArticleDoubleSecond">
               <label for="depreciationYear" class="popupArticleLabel">감가기준년도</label>
@@ -330,7 +390,11 @@
           <div class="popupArticleBox popupArticleBoxOne">
             <div class="popupArticleDouble">
               <label for="driverName" class="popupArticleLabel">담당기사</label>
-              <input type="text" id="driverName" class="popupArticleInput" placeholder="00">
+              <select type="text" id="driverName" class="popupArticleInput popupArticleInputSelect">
+                <option value="1">김원탁</option>
+                <option value="2">정진욱</option>
+                <option value="3">남소정</option>
+              </select>
             </div>
           </div>
           <div class="popupArticleBox popupArticleBoxOne">
@@ -352,12 +416,7 @@
               </div>
             </div>
           </div>
-          <div class="popupArticleBox popupArticleBoxOne">
-            <div class="popupArticleDouble">
-              <label for="registrationCert" class="popupArticleLabel">차량등록증</label>
-              <input type="text" id="registrationCert" class="popupArticleInput">
-            </div>
-          </div>
+          
         </div>
         <div class="closeCreate">
           <button class="close" onclick="closeUpdatePopup()">닫기</button>
@@ -365,6 +424,7 @@
         </div>
       </div>
     </div>
+    
     <div id="documentPopup" class="documentPopup">
       <div class="documentPopupContent">
         <div class="popupTitle">
