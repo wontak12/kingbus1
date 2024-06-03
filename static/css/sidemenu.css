@@ -90,6 +90,7 @@
 .sideMenuNav2Box {
   overflow: hidden;
   height: 0;
+  transition: max-height 0.3s ease-out;
 }
 
 .sideMenuNav2 {

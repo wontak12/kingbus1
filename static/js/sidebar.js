@@ -11,6 +11,7 @@ for (i = 0; i < nav1BoxMenuHaveDepth2.length; i++) {
   nav1BoxMenuHaveDepth2[i].addEventListener("click", openSideNav)
 }
 
+
 function openSideNav() {
   const idx = Array.from(nav1BoxMenuHaveDepth2).indexOf(this);
   for (i = 0; i < nav1BoxMenuHaveDepth2.length; i++) {
@@ -76,7 +77,6 @@ function openSideNav() {
     navOpenCount = true;
   }
 }
-
 
 //hover 색 변화
 for (i = 0; i < nav1Box.length; i++) {

@@ -19,3 +19,15 @@ function openCreatePopup() {
   function closeDocumentPopup() {
     document.getElementById("documentPopup").style.display = "none";
   }
+  function openExplainPopup(){
+    document.getElementById("bonusExplain").style.display="block";
+  }
+  function closeExplainPopup() {
+    document.getElementById("bonusExplain").style.display = "none";
+  }
+  function openMaintenancePopup(){
+    document.getElementById("maintenancePopup").style.display="block"
+  }
+  function closeMaintenancePopup(){
+    document.getElementById("maintenancePopup").style.display="none"
+  }
