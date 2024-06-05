@@ -335,13 +335,37 @@
 
           <!--SearchForm-->
           <div class="searchContainer">
+
               <form class="searchForm">
                   <label for="" class="searchFormLabel">날짜 : </label>
                   <input autocomplete="off" name='month' value="2024-05" type="month" class="searchFormInput searchFormInputMonth">
                   <label for="" class="searchFormLabel">이름 : </label>
                   <input autocomplete="off" name="name" value="" type="text" class="searchFormInput">
+                  <label for="" class="searchFormLabel">학교운행여부 : </label>
+                  <select name="" id="" class="searchFormInput">
+                    <option value="운행" selected>운행</option>
+                    <option value="미운행">미운행</option>
+                  </select>
                   <input type="submit" class="searchFormSearchBtn" value="검색">
               </form>
+
+              <div class="button">
+
+                <!--성과급 설명 팝업 버튼-->
+                <button id="bonusExplainbutton" class="bonusExplainButton" onclick="openExplainPopup()">
+                  <span>성과급 설명서</span>
+                </button>
+                <!--성과급 설명 팝업 버튼 done-->
+
+                <!--급여현황 버튼-->
+                <button id="bonusExplainbutton" class="salaryButton">
+                  <span>급여현황</span>
+                </button>
+                <!--급여현황 버튼 done-->
+
+            </div>
+
+
           </div>
           <!--SearchForm done-->
 
@@ -349,6 +373,7 @@
           <table class="tableList">
             <thead>
               <tr class ="tableListHeadTr">
+                <td class="tableListHeadTrTd"><input type="checkbox" class="amountCheckAll"></td>
                 <td class="tableListHeadTrTd">번호</td>
                 <td class="tableListHeadTrTd">이름</td>
                 <td class="tableListHeadTrTd">운행시간</td>
@@ -364,17 +389,18 @@
             </thead>
             <tbody>
               <tr>
+                <td><input type="checkbox"></td>
                 <td>1</td>
                 <td>김원탁</td>
                 <td>7시간43분</td>
                 <td>180km</td>
                 <td>12,548,475</td>
                 <td>6T</td>
-                <td>O</td>
+                <td>운행</td>
                 <td>충족</td>
                 <td>충족</td>
                 <td>충족</td>
-                <td>300,000</td>
+                <td>400,000</td>
               </tr>
             </tbody>
           </table>
@@ -386,7 +412,7 @@
     <!--mainContainer done-->
     
     <!--성과급 설명 팝업 버튼-->
-    <button id="bonusExplainbutton" class="bonusExplainbutton" onclick="openExplainPopup()">
+    <button id="bonusExplainbutton" class="bonusExplainButton" onclick="openExplainPopup()">
       <span>성과급 설명서</span>
     </button>
     <!--성과급 설명 팝업 버튼 done-->

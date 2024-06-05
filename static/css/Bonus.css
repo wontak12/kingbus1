@@ -28,7 +28,8 @@
   }
   
   .searchFormInput{
-  width: 18rem;
+    margin-right: 2rem;
+  width: 15rem;
   height: 2.6rem;
   padding-left: 1rem;
   box-sizing: border-box;
@@ -40,6 +41,7 @@
   }
   
   .searchFormSearchBtn{
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,44 +111,48 @@
     padding: initial;
     border: initial;
     }
-.tableListHeadTrTd:nth-child(1){
-    width: 5%;
-}
-.tableListHeadTrTd:nth-child(2){
-    width: 7%;
-}
-.tableListHeadTrTd:nth-child(3){
-    width: 10%;
-}
-.tableListHeadTrTd:nth-child(4){
-    width: 8%;
-}
-.tableListHeadTrTd:nth-child(5){
-    width: 10%;
-}
-.tableListHeadTrTd:nth-child(6){
-    width: 5%;
-}
-.tableListHeadTrTd:nth-child(7){
-    width: 7%;
-}
-.tableListHeadTrTd:nth-child(8){
-    width: 8%;
-}
-.tableListHeadTrTd:nth-child(9){
-    width: 8%;
-}
-.tableListHeadTrTd:nth-child(10){
-    width: 8%;
-}
-.tableListHeadTrTd:nth-child(11){
-    width: 10%;
     
-}    
-tbody tr td:last-child {
-    color: red;
-    font-size: 1.4rem;
-}
+    .tableListHeadTrTd:nth-child(1){
+      width: 3%;
+  }
+    .tableListHeadTrTd:nth-child(2){
+        width: 3%;
+    }
+    .tableListHeadTrTd:nth-child(3){
+        width: 7%;
+    }
+    .tableListHeadTrTd:nth-child(4){
+        width: 9%;
+    }
+    .tableListHeadTrTd:nth-child(5){
+        width: 9%;
+    }
+    .tableListHeadTrTd:nth-child(6){
+        width: 10%;
+    }
+    .tableListHeadTrTd:nth-child(7){
+        width: 5%;
+    }
+    .tableListHeadTrTd:nth-child(8){
+        width: 7%;
+    }
+    .tableListHeadTrTd:nth-child(9){
+        width: 8%;
+    }
+    .tableListHeadTrTd:nth-child(10){
+        width: 9%;
+    }
+    .tableListHeadTrTd:nth-child(11){
+        width: 7%;
+    }
+    .tableListHeadTrTd:nth-child(12){
+        width: 9%;
+        
+    }    
+    tbody tr td:last-child {
+        color: red;
+        font-size: 1.4rem;
+    }
 
 /*팝업*/
   .explainPopup {
@@ -209,15 +215,22 @@ tbody tr td:last-child {
     padding: 1.5rem 0;
     box-sizing: border-box;
   }
-  .bonusExplainbutton{
+  .bonusExplainButton{
+    border-radius: 0.6rem;
     font-size: 1.4rem;
-    position: absolute;
-    margin-top: 9.5rem;
-    margin-left: 170rem;
     background-color: #0069D9;
     border: none;
     color: white;
     width: 15rem;
+    height: 4rem;
+  }
+  .salaryButton{
+    border-radius: 0.6rem;
+    font-size: 1.4rem;
+    background-color: #575757;
+    border: none;
+    color: white;
+    width: 8rem;
     height: 4rem;
   }
   /*X자*/
