@@ -142,14 +142,15 @@
 
   .popupContent {
     background-color: #fefefe;
-    margin-top: 2%;
-    margin-left: 25%;
+    margin-top: 7rem;
+    margin-left: 18.4rem;
     padding: 20px;
     border: 1px solid #888;
-    width: 100.9rem;
-    height: 85rem;
+    width: 152rem;
+    height: 80.7rem;
+
   }
-  /* .updatePopupContent {
+  .updatePopupContent {
     background-color: #fefefe;
     margin-top: 2%;
     margin-left: 25%;
@@ -157,7 +158,7 @@
     border: 1px solid #888;
     width: 100.9rem;
     height: 85rem;
-  } */
+  }
   .maintenancePopupTitle {
     padding: 2rem;
     padding-top: 2.5rem;
@@ -794,7 +795,7 @@
   font-size: 1.6rem;
   color: #575757;
 }
-.vehicleUpdate, .vehicleCreate{
+.vehicleUpdate{
   margin-top:4rem;
   height: auto;
   padding: 0 5rem;
@@ -802,7 +803,7 @@
   justify-content: flex-end;
   align-items: center;
 }
-.vehicleUpdateButton, .vehicleCreateButton{
+.vehicleUpdateButton{
   width: 12.4rem;
   height: 3.2rem;
   background-color: #4000A8;
